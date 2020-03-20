@@ -195,7 +195,7 @@ public class PrestoResultSetMetaData
         return getType(column(column).getColumnType());
     }
 
-    String getType(int type)
+    static String getType(int type)
     {
         // see javax.sql.rowset.RowSetMetaDataImpl
         switch (type) {
